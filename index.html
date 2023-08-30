@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="ouioui.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<nav class="navbar avbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+        </div>
+</nav>
+
+<body>
+    <input type="checkbox" class="checkbox" />
+    <span class="contentBurger">
+        <div class="burger">
+            <span></span>
+        </div>
+    </span>
+    <section id="content" class="content">
+        <ul class="contentMenuInBurger">
+            <li id="homeBurger">Home</li>
+            <li id="articlesBurger">Articles</li>
+            <li id="aProposBurger">A propos</li>
+            <li id="contactBurger">Contact</li>
+        </ul>
+    </section>
+    <div class="allContent">
+        <section id="home">
+            <div class="contentHome">
+                <h2>Bienvenue !</h2>
+                <p>Vous trouverez sur ce site mon expérience de stage chez Two Frogs ainsi que mes principaux projets de développement.</p>
+            </div>
+            <div class="scroll-button" id="scrollToArticles">
+                <a class="button">
+                    <span class="icon"><i class="fa  fa-angle-double-down"></i></span>
+                </a>
+            </div>
+        </section>
+        <section id="articles">
+            <div id="slider">
+                <div id="prevSlide" style="opacity: 0;">
+                    <a class="button">
+                        <span class="icon"><i class="fa  fa-angle-double-left"></i></span>
+                    </a>
+                </div>
+                <div class="contentArticles">
+                    <div id="slidesContent" class="slidesContent">
+                        <div id="firstArticle" class="slide" style="display: flex;">
+                            <h2>Mon stage chez Two Frogs</h2>
+                            <p> Tout d'abord, qu'est-ce que Two Frogs ?</p>
+                            <p> Two Frogs c'est une entreprise de jeux vidéos issue de Chouic, une entreprise d'application mobile de jeux de soirée.
+                                C'est une entreprise récente de 2 ans qui travaille actuellement sur son premier jeu : Back 2 Back. Ayant pour but de développer des jeux vidéo, ce stage est le stage idéal pour moi.
+                            </p>
+                            <div class="viewMoreDiv" style="display: none;">
+                                <div class="contentViewMore">
+                                    <p>blablablabla</p>
+                                </div>
+                            </div>
+                            <input type="button" class="viewMoreButton" value="View more" onClick="Show()" />
+                        </div>
+                        <div id="secondArticle" class="slide" style="display: none;">
+                            <h2>aervhacizerc</h2>
+                            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, quo recusandae. Maxime harum vel animi laudantium culpa quos voluptatem nulla ut nisi velit! Quia ad voluptates quaerat debitis ab tempore?
+                            </p>
+                            <div class="viewMoreDiv" style="display: none;">
+                                <div class="contentViewMore">
+                                    <p>vgkjb</p>
+                                </div>
+                            </div>
+                            <input type="button" class="viewMoreButton" value="View more" onClick="Show()" /></div>
+                        <div id="thirdArticle" class="slide" style="display: none;"> LOREM 3</div>
+                        <div id="fourthArticle" class="slide" style="display: none;"> LOREM 4</div>
+                        <div id="fifth article" class="slide" style="display: none;"> LOREM 5</div>
+                    </div>
+                </div>
+                <div id="nextSlide">
+                    <a class="button">
+                        <span class="icon"><i class="fa  fa-angle-double-right"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-button" id="scrollToApropos">
+                <a class="button">
+                    <span class="icon"><i class="fa  fa-angle-double-down"></i></span>
+                </a>
+            </div>
+        </section>
+        <section id="apropos">
+            <div class="contentApropos">
+                <div id="aProposPage">
+                    <div id="me">
+                        <div id="photo">
+                            <img src="photo.jpg">
+                        </div>
+                        <div id="proMe">
+                            <a id="aProposCV" target="_blank" href="CV.pdf">
+                                CV
+                            </a>
+                            <a id="aProposGH" target="_blank" href="https://github.com/Ahrusalome">
+                                GitHub
+                            </a>
+                        </div>
+                        <div id="description">
+                            <p>Après un parcours scientifique au lycée, je me suis dirigée vers des études de musique. J'ai ensuite décidé d'alier logique et créativité dans l'informatique. Mon but final serait de développer des jeux vidéos.</p>
+                        </div>
+                    </div>
+                    <div id="work">
+                        <p>Mes projets principaux</p>
+                        <div id="fyght">
+                            Fyght!
+                            <div id="fyghtDesc">
+                                <p>Projet étudiant : jeu de combat en BO3 basant ses mécaniques sur des combos d'input.
+                                    Réalisé à 3 en 2 mois.
+                                </p>
+                            </div>
+                        </div>
+                        <div id="tumble">
+                            Tumble
+                            <div id="tumbleDesc">
+                                <p>Plateformer réalisé en duo pour la Kenney Game Jam 2023 en 48H.</p>
+                            </div>
+                        </div>
+                        <div id="beAsOne">
+                            Be As One
+                            <div id="beAsOneDesc">
+                                <p>Projet étudiant : jeu d'action-aventure basant ses mécaniques sur la musique. 
+                                    Réalisé en équipe de 10 incluant un pôle dev, marketting et graphique sur un an. (projet non terminé)
+                                </p>
+                            </div>
+                        </div>
+                        <div id="yCommunity">
+                            Ycommunity
+                            <div id="yCommunityDesc">
+                                <p>Projet étudiant : application mobile regroupant toutes les infos importantes du campus Ynov Nantes et donnant la possibilité aux étudiants de s'exprimer.
+                                    Réalisé en équipe de 10 incluant un pôle dev, marketting et graphique sur un an. (projet non terminé)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-button" id="scrollToContact">
+                <a class="button">
+                    <span class="icon"><i class="fa  fa-angle-double-down"></i></span>
+                </a>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contentContact">
+                <p>Me contacter</p>
+                <div id="contactList">
+                    <a href="mailto:salome.karsenti@hotmail.com">
+                        <img src="gmail.png">
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/salom%C3%A9-karsenti/">
+                        <img src="linkedin.png">
+                    </a>
+                    <a target="_blank" href="https://github.com/Ahrusalome">
+                        <img src="github.png">
+                    </a>
+                    <a target="_blank" href="https://ahrusalome.itch.io/">
+                        <img src="itch.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-button" id="scrollToTop">
+                <a class="button">
+                    <span class="icon"><i class="fa  fa-angle-double-up"></i></span>
+                </a>
+            </div>
+        </section>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/CSSPlugin.min.js"></script>
+    <script src="main.js"></script>
+</body>
+<script></script>
+
+</html>
